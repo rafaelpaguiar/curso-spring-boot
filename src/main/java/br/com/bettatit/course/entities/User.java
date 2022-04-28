@@ -30,6 +30,7 @@ public class User implements Serializable {
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "client")
+	//O mappedBy usa o nome da variavel da outra ponta do relacionamento
 	private List<Order> orders = new ArrayList<>();
 	
 	public User() {
